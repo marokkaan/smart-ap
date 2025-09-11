@@ -1,0 +1,1 @@
+input("Voeg een cijfer toe")
