@@ -5,11 +5,11 @@ def infodag(dag):
         return None, None, None
     celcius = float(celcius_input)
 
-    wind_input = input(f"Wat is op dag {dag} de windsnelheid in meter per seconde? ")
-    if wind_input == "":
+    windsnelheid_input = input(f"Wat is op dag {dag} de windsnelheid in meter per seconde? ")
+    if windsnelheid_input == "":
         print("bye")
         return None, None, None
-    windsnelheid = float(wind_input)
+    windsnelheid = float(windsnelheid_input)
 
     vocht_input = input(f"Wat is op dag {dag} de luchtvochtigheid als percentage (0–100)? ")
     if vocht_input == "":
