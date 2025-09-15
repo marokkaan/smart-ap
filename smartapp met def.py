@@ -49,11 +49,14 @@ def bereken_gemiddelde(temperaturen):
 dagen = []
 alle_dagen = 7
 
+
+#ik heb voor (1, alle_dagen +1) chat gpt gebruik want ik snapte niet waarom die begon met dag 0, maar dat komt omdat een
+#lijst begint bij 0, voor de rest heb ik de rest wel zelf gemaakt alleen het stukje (1, alle_dagen +1)
 for dag in range(1, alle_dagen + 1):
     celcius, windsnelheid, luchtvochtigheid = infodag(dag)
     if celcius is None:
         break
-
+# Ik heb voor .1f gebruik gemaakt van chatgpt want ik wist niet hoe ik dat moest doen.
     temperatuur_fahrenheit, gevoelstemperatuur = bereken_temperaturen(celcius, windsnelheid, luchtvochtigheid)
     print(f"De temperatuur in Fahrenheit is {temperatuur_fahrenheit:.1f}")
     print(f"De gevoelstemperatuur is {gevoelstemperatuur:.1f}")
