@@ -1,3 +1,4 @@
+# Eerst vraag ik informatie op om mijn variabelen aan te vullen
 def infodag(dag):
     celcius_input = input(f"Wat is op dag {dag} de temperatuur in graden Celsius? ")
     if celcius_input == "":
@@ -19,12 +20,15 @@ def infodag(dag):
 
     return celcius, windsnelheid, luchtvochtigheid
 
+#Aangezien ik nu celcius, windsnelheid en luchtvochtigheid weet kan ik  het gevoelstemperatuur berekenen en het temperatuur in fahrenheit
 def bereken_temperaturen(celcius, windsnelheid, luchtvochtigheid):
     temperatuur_fahrenheit = celcius * 1.8 + 32
     gevoelstemperatuur = celcius - (luchtvochtigheid / 100) * windsnelheid
     return temperatuur_fahrenheit, gevoelstemperatuur
 
-def advies (gevoelstemperatuur, windsnelheid):
+# Nu geef ik advies aan de gebruiker doormiddel van het gevoelstemperatuur en het windsnelheid
+
+def advies(gevoelstemperatuur, windsnelheid):
     if gevoelstemperatuur < 0 and windsnelheid > 10:
         print("Het is heel koud en het stormt! Verwarming helemaal aan!")
     elif gevoelstemperatuur < 0 and windsnelheid <= 10:
@@ -41,7 +45,7 @@ def advies (gevoelstemperatuur, windsnelheid):
 def bereken_gemiddelde(temperaturen):
     return sum(temperaturen) / len(temperaturen)
 
-
+# Aangezien je informatie moet opvragen voor 7 dagen maak ik een loop lijst
 dagen = []
 alle_dagen = 7
 
