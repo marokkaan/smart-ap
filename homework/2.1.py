@@ -18,3 +18,5 @@ beloning = (cijferPROJA + cijferPROG + cijferMOD) * 30
 
 overzicht = f"Mijn cijfers zijn gemiddeld een {gemiddelde:.1f}, en ik verdien {beloning:.1f} euro."
 print(overzicht)
+
+git rm unwanted-file.txt
